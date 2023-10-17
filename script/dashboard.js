@@ -72,12 +72,12 @@ $modalDleteBtn.addEventListener("click", (e) => {
       },
     })
     .then((response) => {
-        console.log(response);
-        if(response.status === 200){
-            $modalDeleteWrapper.classList.remove("modal-delete-wrapper-active");
-            $modalDelete.classList.remove("modal-delete-active");
-            fetchData("/listing/get");
-        }
+      console.log(response);
+      if (response.status === 200) {
+        $modalDeleteWrapper.classList.remove("modal-delete-wrapper-active");
+        $modalDelete.classList.remove("modal-delete-active");
+        fetchData("/listing/get");
+      }
     })
     .catch((error) => {
       console.log(error);
